@@ -57,7 +57,7 @@ export default function Signup() {
             id="name"
             name="name"
             type="text"
-            placeholder="name"
+            placeholder="Name"
             required
             value={name}
             onInput={(e) => setName(e.currentTarget.value)}
@@ -67,7 +67,7 @@ export default function Signup() {
             id="email"
             name="email"
             type="email"
-            placeholder="email"
+            placeholder="Email"
             required
             value={email}
             onInput={(e) => setEmail(e.currentTarget.value)}
@@ -77,7 +77,7 @@ export default function Signup() {
             id="password"
             name="password"
             type="password"
-            placeholder="password"
+            placeholder="Password"
             autoComplete="current-password"
             required
             value={password}
