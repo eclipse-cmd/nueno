@@ -1,4 +1,5 @@
 import { JobsListResponseParams } from "@api-contracts/jobs/list";
+import { CircularProgress } from "@mui/material";
 import axios from "axios";
 import Link from "next/link";
 import { useQuery } from "react-query";
@@ -15,7 +16,11 @@ export default function Jobs() {
   }
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="relative flex items-center justify-center min-w-full min-h-screen">
+        <CircularProgress size={24} style={{ color: "#000000" }} />
+      </div>
+    );
   }
 
   return (

@@ -3,8 +3,6 @@ import { getSession } from "next-auth/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import Logo from "../../public/nueno-logo-black.svg";
-
 export default function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -49,7 +47,7 @@ export default function Signup() {
     <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-gray-100 sm:px-6 lg:px-8">
       <div className="w-full max-w-md space-y-8">
         <div className="flex flex-col">
-          <Image src={Logo} className="w-auto h-12 mx-auto" width={60} height={60} />
+          <Image src="/nueno-logo-black.svg" className="w-auto h-12 mx-auto" width={60} height={60} />
           <h2 className="mt-6 text-3xl font-extrabold text-center text-gray-900">Create Account</h2>
         </div>
         <form onSubmit={handleSubmit}>

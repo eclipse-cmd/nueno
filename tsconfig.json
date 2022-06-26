@@ -9,7 +9,9 @@
       "@pages/*": ["pages/*"],
       "@business-logic/*": ["business-logic/*"],
       "@api-contracts/*": ["api-contracts/*"],
-      "@tests/*": ["tests/*"]
+      "@tests/*": ["tests/*"],
+      "@store/*": ["./store/*"],
+      "@prisma/*": ["./prisma/*"]
     },
     "skipLibCheck": true,
     "strict": true,
