@@ -1,6 +1,7 @@
 import axios from "axios";
 import { getSession } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Signup() {
@@ -89,6 +90,12 @@ export default function Signup() {
             className="relative flex justify-center w-full px-4 py-2 mt-5 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md group hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
             Sign Up
           </button>
+          <p className="mt-6 text-gray-900">
+            Have an account ?{" "}
+            <Link href={"/auth/login"}>
+              <a className="text-indigo-500">Login</a>
+            </Link>
+          </p>
         </form>
       </div>
     </div>

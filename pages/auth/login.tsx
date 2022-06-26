@@ -1,6 +1,7 @@
 import { GetServerSidePropsContext } from "next";
 import { getCsrfToken, signIn } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
@@ -108,6 +109,12 @@ export default function Login({ csrfToken }: ServerSideProps) {
               Sign in
             </button>
           </div>
+          <p className="text-gray-900">
+            Not yet registered ?{" "}
+            <Link href={"/auth/signup"}>
+              <a className="text-indigo-500">Create Account</a>
+            </Link>
+          </p>
         </form>
       </div>
     </div>
